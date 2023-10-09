@@ -1,27 +1,52 @@
-# React + TypeScript + Vite
+# My React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React app built with MUI components and React hooks.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The app demonstrates:
 
-## Expanding the ESLint configuration
+- Using MUI components like Button, TextField, Select, Checkbox etc
+- Implementing custom modal popup using MUI Modal
+- Passing values between components via refs 
+- Tab views using MUI Tabs
+- Styling MUI components via sx prop
+- Using icons from MUI icons
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Components
 
-- Configure the top-level `parserOptions` property like this:
+The main App component renders different demo components:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- MyModal - Shows a modal popup 
+- ShoppingCart - Renders a shopping cart icon with badge
+- TabsMain - Renders tab views
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Reusable Tab components:
+
+- Tab1
+- Tab2
+- Tab3
+
+## Installation
+
+npm install
+
+## Running the app
+
+npm start
+
+The app will be available at http://localhost:3000
+
+## Further Improvements
+
+Some ideas for enhancing the app:
+
+- Add routing between views 
+- Use Redux for state management
+- Write unit tests for components
+- Implement server-side rendering
+- Improve accessibility following WAI-ARIA standards
+
+## License
+
+MIT
