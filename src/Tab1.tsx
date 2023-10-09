@@ -2,7 +2,7 @@ import React from 'react'
 
 function Tab1() {
   return (
-    <p>Hello World 1</p>
+    <div>Hello World 1</div>
   )
 }
 
